@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<title>聊天室chat-free</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/chat.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<link href="lib/ionic/css/ionic.min.css" rel="stylesheet">
+<script src="lib/ionic/js/ionic.bundle.min.js"></script>
+</head>
+
+<body ng-app="chat" ng-controller="ChatCtrl">
+    <ion-side-menus>
+        <!-- 中心内容 -->
+		<ion-side-menu-content>
+		  <div class="bar bar-header bar-balanced">
+			<h1 class="title">说明</h1>
+          </div>
+
+          <div class="explain">
+              <ol>
+                <li>1、此聊天室是基于workerman服务器通讯框架开发的一个即时通信小游戏</li>
+                <li>2、左滑出现用户列表，主页是聊天界面，发言请在聊天界面下面的聊天框编辑</li>
+                <li>3、聊天室无需注册，室内成员谁也不认识谁，除非自己点明</li>
+                <li>4、聊天信息无任何机制的缓存，退出app或重新进入聊天界面消息立刻被清除</li>
+                <li>5、能够指定某个室内成员发送消息，别人无法看到，注意格式为 name1 to name2</li>
+                <li>6、聊天室聊天可进行16进制，json等加密，解密请自行寻找解决方法(找个程序猿就O啦)</li>
+                <li>7、注意：从说明或推广页面切到聊天界面，表示重新进入聊天室，之前的聊天信息被清除</li>
+                <li>8、注意：当出现崩溃自动退出时需要关闭app(后台也要关)，重新进入即可</li>
+                <li><img src="image/icon.jpg"></li>
+              </ol>
+          </div>
+		</ion-side-menu-content>
+    </ion-side-menus>
+
+    <div style="clear:both"></div>
+    <div class="tabs tabs-icon-top">
+      <a class="tab-item" href="index.html">
+        <i class="icon ion-chatbubbles"></i>
+        <span>聊天</span>
+      </a>
+      <a class="tab-item" href="instr.html">
+        <i class="icon ion-flag active"></i>
+        <span class="active">说明</span>
+      </a>
+      <a class="tab-item" href="author.html">
+        <i class="icon ion-person"></i>
+        <span>推广</span>
+      </a>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+</html>

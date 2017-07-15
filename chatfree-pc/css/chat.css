@@ -1,0 +1,206 @@
+@CHARSET "UTF-8";
+
+a:link {/*设置 a 对象在未被访问前的样式。*/
+	/*COLOR: #242424; TEXT-DECORATION: none*/
+}
+a:visited {/*设置 a 对象在其链接地址已被访问过时的样式。*/
+	/*COLOR: #242424; TEXT-DECORATION: none*/
+}
+a:active {/*设置对象在被用户激活(在鼠标点击与释放之间发生的事件)时的样式。*/
+	/*COLOR: #242424; TEXT-DECORATION: none*/
+}
+a:hover {/*设置对象在其鼠标悬停时的样式。*/
+	/*COLOR: #242424*/
+}
+
+body,div,p,a{
+	padding:0;
+}
+
+body{
+	background: #f5f3f3 none repeat scroll 0 0;
+	background-image: url(../image/back.jpg);
+}
+
+.chat-title {
+	margin: 0 auto;
+	height: 85px;
+	width: 950px;
+	background-image: url(../image/back1.jpg);
+	background-color: #ffffff;  
+	border: 1px solid #e8e8e8;
+}
+.chat-title h1{
+	text-align: center; 
+	color: #4e4853;
+}
+.show-rules {
+	margin-top: -5px;
+	font-size: 12px;
+	color: #757575;
+	padding: 2px;
+	cursor: pointer;
+	border: 2px solid #cee3e9;
+	background: #ffffff;
+	border-radius: 8px;
+}
+.chat-title a:hover { color: #242424;background-color: #cee3e9;  }
+
+#shade{ 
+	display: none;
+	position: fixed;  
+	top: 0%;  
+	left: 0%;  
+	width: 100%;  
+	height: 100%;  
+	background-color: #5d5d5d;  
+	z-index:1001;       /*层叠顺序*/
+	-moz-opacity: 0.7;  /*设置透明度-火狐浏览器*/
+	opacity:.70;  /*设置透明度*/
+	filter: alpha(opacity=70);/*filter为CSS3滤镜*/
+}
+#show{
+	display: none;  
+	position: fixed;
+	top: 15%;  
+	left: 32%;  
+	width: auto;  
+	height: auto;
+	padding: 8px;  
+	border-radius: 3px;
+	border: 5px solid #E8E9F7;
+	background-color: white;  
+	z-index:1002;  
+	overflow: auto;
+}
+#show a {
+	margin-left: 92%;
+}
+#show a:hover { color: #242424;background-color: #cee3e9;  }
+#show li {
+	color: #808080;
+	line-height: 35px;
+}
+
+
+.chat-chat {
+	margin: 0 auto;
+	margin-top: 15px;
+	height: auto;
+	width: 950px;
+}
+.chat-user {
+	float: left;
+	height: 755px;
+	width: 25%;
+	background-color: #ffffff;  
+	border: 1px solid #e8e8e8;
+	overflow-y: auto;
+}
+.chat-content {
+	float: left;
+	margin-left: 43px;
+	height: 755px;
+	width: 70%;
+	background-color: #ffffff;  
+	border: 1px solid #e8e8e8;
+	overflow-y: hidden;
+}
+
+.chat-liaotian {
+	height: 74%;
+	padding: 25px;
+	overflow-y: auto;
+}
+.chat-edit {
+	height: 26%;
+	border-top: 1px solid #e8e8e8;
+	padding: 5px;
+	background-color: #ffe8fe;
+}
+
+
+.footer {
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	padding: 15px;
+	height: 50px;
+	width: 950px;
+	margin-top: 15px;
+	background-color: #4b4b4b;  
+}
+.footer a:link {
+	color: #fff;
+}
+.footer a:visited {
+	color: #fff;
+}
+.footer a:active {
+	color: #fff;
+}
+.footer a:hover {
+	color: #00ffff;
+}
+
+
+ul{ margin:0; padding:0; list-style:none; }
+#userlist {
+	text-align: center;
+	font-weight: 900;
+	font-size: 18px;
+	color: #0080c0;
+	margin: 0;
+	line-height: 30px;
+}
+
+.chat-box{
+	clear: both;
+	width: 95%;
+    height: auto;
+	top: 7px;
+	border: 2px solid #e8e8e8;
+	border-radius: 10px;
+	word-break:break-all; 
+    line-height:15px; 
+    margin-bottom:30px; 
+    padding: 10px;
+	font-size: 1.2em;
+    background: #ffecfc; 
+    position:relative; 
+}
+.logout , .login {
+	clear: both;
+	color: #0080ff;
+	padding: 7px;
+}
+
+
+#chat-name p {
+	font-size: 1.2em;
+	height: 15px;
+}
+#chat-name img {
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	margin-right: 12px;
+}
+.head {
+	float: left;
+}
+
+
+.myButton{
+	margin-bottom: 25px;
+	height: 27px;
+	width: 75px;
+	margin-left: 85%;
+}
+
+
+
+
+
+
+
+

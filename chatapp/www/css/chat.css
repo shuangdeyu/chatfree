@@ -1,0 +1,228 @@
+@CHARSET "UTF-8";
+
+a:link {/*设置 a 对象在未被访问前的样式。*/
+	/*COLOR: #242424; TEXT-DECORATION: none*/
+}
+a:visited {/*设置 a 对象在其链接地址已被访问过时的样式。*/
+	/*COLOR: #242424; TEXT-DECORATION: none*/
+}
+a:active {/*设置对象在被用户激活(在鼠标点击与释放之间发生的事件)时的样式。*/
+	/*COLOR: #242424; TEXT-DECORATION: none*/
+}
+a:hover {/*设置对象在其鼠标悬停时的样式。*/
+	/*COLOR: #242424*/
+}
+
+body,div,p,a{
+	padding:0;
+}
+
+body{
+	background: #f5f3f3 none repeat scroll 0 0;
+	/*background-image: url(../image/back.jpg);*/
+}
+
+.active{ color: rgb(40, 138, 43); }
+
+.chat-title {
+	margin: 0 auto;
+	height: 85px;
+	width: 950px;
+	background-image: url(../image/back1.jpg);
+	background-color: #ffffff;
+	border: 1px solid #e8e8e8;
+}
+.chat-title h1{
+	text-align: center;
+	color: #4e4853;
+}
+.show-rules {
+	margin-top: -5px;
+	font-size: 12px;
+	color: #757575;
+	padding: 2px;
+	cursor: pointer;
+	border: 2px solid #cee3e9;
+	background: #ffffff;
+	border-radius: 8px;
+}
+.chat-title a:hover { color: #242424;background-color: #cee3e9;  }
+
+.chat-chat {
+	margin: 0 auto;
+	margin-top: 15px;
+	height: auto;
+	width: 950px;
+}
+.chat-user {
+	float: left;
+	height: 755px;
+	width: 25%;
+	background-color: #ffffff;
+	border: 1px solid #e8e8e8;
+	overflow-y: auto;
+}
+.chat-content {
+	margin-top: 30px;
+	padding-bottom: 50px;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(227, 227, 227, 0.3);
+	overflow-y: auto;
+}
+/*@media (max-height: 600px)
+{
+	.chat-content{ padding-bottom: 8%;  }
+	@media (max-width: 1200px){
+		.chat-content{ padding-bottom: 12%;  }
+	}
+	@media (max-width: 680px){
+		.chat-content{ padding-bottom: 18%;  }
+	}
+	@media (max-width: 470px){
+		.chat-content{ padding-bottom: 22%;  }
+	}
+	@media (max-width: 380px){
+		.chat-content{ padding-bottom: 25%;  }
+	}
+}*/
+
+
+.chat-liaotian {
+	height: 85%;
+	padding: 25px;
+	overflow-y: auto;
+}
+.chat-edit {
+	height: 15%;
+	border-top: 1px solid #e8e8e8;
+	padding-top: 5px;
+	background-color: #fefefe;
+}
+@media (max-height: 1060px){
+	.chat-liaotian{ height: 85%; }
+	.chat-edit{ height: 15%; }
+}
+@media (max-height: 880px){
+	.chat-liaotian{ height: 82%; }
+	.chat-edit{ height: 18%; }
+}
+@media (max-height: 740px){
+	.chat-liaotian{ height: 78%; }
+	.chat-edit{ height: 22%; }
+}
+@media (max-height: 620px){
+	.chat-liaotian{ height: 74%; }
+	.chat-edit{ height: 26%; }
+}
+@media (max-height: 540px){
+	.chat-liaotian{ height: 71%; }
+	.chat-edit{ height: 29%; }
+}
+@media (max-height: 480px){
+	.chat-liaotian{ height: 55%; }
+	.chat-edit{ height: 45%; }
+	@media (max-width: 365px){
+		.chat-liaotian{ height: 52%; }
+		.chat-edit{ height: 48%; }
+	}
+}
+
+
+ul{ margin:0; padding:0; list-style:none; }
+#userlist {
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: #0080c0;
+	margin-top: 50px;
+	line-height: 30px;
+}
+
+
+.chat-box{
+	clear: both;
+	width: 95%;
+    height: auto;
+	top: 7px;
+	border: 1px solid #e8e8e8;
+	border-radius: 0px;
+	word-break:break-all;
+    line-height:25px;
+    margin-bottom:30px;
+    padding: 10px;
+	font-size: 1.2em;
+    background: #ffffff;
+    position: relative;
+}
+.logout , .login {
+	clear: both;
+	color: #0080ff;
+	padding: 7px;
+}
+
+
+#chat-name p {
+	font-size: 1.2em;
+	height: 15px;
+}
+#chat-name img {
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	margin-right: 12px;
+}
+.head {
+	float: left;
+}
+
+#seltct_user_list{
+	border: none;
+}
+
+.myButton{
+	margin-left: 5px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.edit-text{
+	width:90%;
+}
+@media (max-width: 630px){
+	.edit-text{
+		width:85%;
+	}
+}
+@media (max-width: 434px){
+	.edit-text{
+		width:80%;
+	}
+}
+@media (max-width: 335px){
+	.edit-text{
+		width:75%;
+	}
+}
+
+
+/**********说明书页css**********/
+.explain{
+	margin-top: 50px;
+	height: 100%;
+	width: 100%;
+	padding: 0 9vw;
+	overflow-y: auto;
+}
+.explain ol {
+	margin-bottom: 110px;
+}
+.explain li{
+	line-height: 7vw;
+	margin-bottom: 15px;
+	font-size: 4vw;
+	color: rgb(61, 61, 61);
+}
+.explain li img{
+	width: 100%;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
